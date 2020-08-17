@@ -1,0 +1,97 @@
+.jain-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+}
+
+.jain-header {
+  background-color: #141618;
+  color: #FFFFFF;
+  height: 30px;
+}
+
+/*
+.jain-main-menu{
+  width: 100%;
+}
+*/
+.menu-list {
+  list-style: none;
+  display: flex;
+  flex-flow: wrap-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 !important;
+}
+.menu-list ul {
+  margin: 0 !important;
+}
+.menu-list li {
+  border: 1px solid hsla(0,0%,100%,.2);
+  flex : 1;
+  color: hsla(0,0%,100%,.9);
+  text-align: center;
+  vertical-align: bottom;
+  align-self: stretch;
+  cursor: pointer;
+}
+.menu-list li:first-child {
+  flex-basis:300px;
+  border: none;
+}
+
+.menu-list li:hover {
+  background-color: #21252d;
+}
+.icon-bar {
+  width: 90px; /* Set a specific width */
+  background-color: #555; /* Dark-grey background */
+  height: 100%;
+}
+
+.icon-bar a {
+  display: block; /* Make the links appear below each other instead of side-by-side */
+  text-align: center; /* Center-align text */
+  padding: 16px; /* Add some padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 36px; /* Increased font-size */
+}
+
+.icon-bar a:hover {
+  background-color: #000; /* Add a hover color */
+}
+
+.active {
+  background-color: #4CAF50; /* Add an active/current color */
+}
+
+.jain-content {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.jain-content .jain-side-nav-menu{
+  flex-wrap: wrap;
+  border-right : 1px solid #7F8C8D;
+}
+
+.jain-content .jain-main-content{
+  flex:5
+}
+
+.jain-flag{
+  height: 50px;
+  background: linear-gradient(180deg,
+  red 0%, red 20%,
+  yellow 20%, yellow 40%,
+  white 40%, white 60%,
+  blue 60%, blue 80%,
+  green 80%, green 100%)
+}
+.jain-footer {
+  flex-basis: 100px;
+  background-color: #7F8C8D;
+}
